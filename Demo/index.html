@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Mag</title>
+    <meta name="description" content="Tag on Images" />
+    <meta name="author" content="Hossein Badrnezhad" />
+    <script src="jquery-1.10.2.min.js"></script>
+    <link href="../src/TagMag.min.css" rel="stylesheet" />
+    <script src="../src/TagMag.js"></script>
+</head>
+<body>
+    <div class="text-center" style="text-align:center">
+        <img id="photo" src="ball2.jpg" style="margin:0 auto;" />
+    </div>
+
+    <script>
+        window.onload = function () {
+            var msg = "Ball";
+            var points = {
+                x: 258,
+                y: 15,
+                w: 326,
+                h: 319
+            };
+
+            TagMag("photo", points, msg);
+        };
+    </script>
+</body>
+</html>
